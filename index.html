@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake</title>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <!-- style -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- script -->
+    <script defer src="script/script.js"></script>
+</head>
+
+<body>
+
+    <!-- container -->
+    <div class="container">
+
+        <!-- board -->
+        <div class="board">
+
+            <!-- header -->
+            <header class="d-flex jcb aic">
+                <div class="d-flex jcb aie w-100">
+                    <h1 class="pl-20">>Snake</h1>
+                    <p class="record pr-20">Record 0</p>
+                </div>
+            </header>
+
+            <!-- play ground -->
+            <main></main>
+
+            <!-- footer -->
+            <footer>
+                <div id="music" class="pointer pl-20">
+                    <i class="fa-solid fa-pause"></i>
+                    <span class="pl-10">Stop music</span>
+                </div>
+                <p class="score pr-20">Punteggio 0</p>
+            </footer>
+        </div>
+        <footer class="commands">
+            <div data-key="ArrowUp" class="fs-2 p-c-up"><i class="p-command fa-solid fa-arrow-up"></i></div>
+            <div data-key="ArrowDown" class="fs-2 p-c-dow"><i class="p-command fa-solid fa-arrow-down"></i></div>
+            <div data-key="ArrowLeft" class="fs-2 p-c-l"><i class="p-command fa-solid fa-arrow-left"></i></div>
+            <div data-key="ArrowRight" class="fs-2 p-c-r"><i class="p-command fa-solid fa-arrow-right"></i></div>
+        </footer>
+
+        <div class="modal">
+        </div>
+
+    </div>
+
+</body>
+
+</html>

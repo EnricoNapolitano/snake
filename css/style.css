@@ -1,0 +1,224 @@
+/** CSS RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/** GENERAL */
+body {
+    background-image: url("../img/bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    background-color: #B7CE40;
+    font-family: 'Press Start 2P', cursive;
+    color: white;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+
+    display: grid;
+    grid-template: repeat(25, 1fr) / repeat(30, 1fr);
+}
+
+h1 {
+    color: white;
+    font-size: 2rem;
+}
+
+.board {
+    width: 60vmin;
+    height: 60vmin;
+
+    background-color: #59854C;
+    border: 5px solid white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container {
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    height: 100px;
+    background-color: #476a3d;
+    border-bottom: 5px solid white;
+
+    display: flex;
+    align-items: center;
+}
+
+footer {
+    height: 50px;
+    background-color: #476a3d;
+    border-top: 5px solid white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.commands {
+    padding: 40px;
+
+    width: 60vmin;
+    background-color: #3f6c7f;
+
+    border: 0;
+    border-left: 5px solid white;
+    border-right: 5px solid white;
+    border-bottom: 5px solid white;
+
+    display: none;
+    justify-content: space-between;
+
+    cursor: pointer;
+}
+
+#music {
+    display: flex;
+    align-items: center;
+}
+
+/** UTILITIES */
+.pointer {
+    cursor: pointer;
+}
+
+.fs-2 {
+    font-size: 1.5rem;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.pl-10 {
+    padding-left: 10px;
+}
+
+.pl-20 {
+    padding-left: 20px;
+}
+
+.pr-20 {
+    padding-right: 20px;
+}
+
+.p-command {
+    padding: 30px;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.aic {
+    align-items: center;
+}
+
+.aie {
+    align-items: end;
+}
+
+.jcb {
+    justify-content: space-between;
+}
+
+/** items */
+.apple {
+    background-color: #CB291A;
+    /* border-radius: 50%; */
+    border: 5px solid #59854C;
+}
+
+.snake {
+    background-color: #86C2DC;
+    border: 1px solid #59854C;
+}
+
+.snake:nth-child(2) {
+    background-color: yellow;
+}
+
+/** MODAL */
+.modal {
+    position: fixed;
+}
+
+.alert {
+    /* position: fixed;
+    top: 355px; */
+    z-index: 2;
+
+    padding: 50px;
+
+    width: 600px;
+    height: 250px;
+
+    background-color: #476a3d;
+    border: 2px solid white;
+}
+
+.alert p {
+    line-height: 25px;
+}
+
+.sad-face {
+    font-size: 3rem;
+    width: 155px;
+}
+
+.btn {
+    font-family: 'Press Start 2P', cursive;
+
+    margin-top: 50px;
+    padding: 8px 20px;
+
+    cursor: pointer;
+}
+
+/** media query */
+@media screen and (max-width: 500px) {
+    .p-command {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    p.record,
+    p.score {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .commands {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .board {
+        width: 90vmin;
+        height: 90vmin;
+    }
+
+    .commands {
+        width: 90vmin;
+    }
+}
